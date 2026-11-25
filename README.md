@@ -35,11 +35,3 @@ pnpm dev
 ```
 
 Abrir la URL que muestra la consola (por defecto `http://localhost:5173`).
-
-## Otros scripts
-
-| Comando | Descripción |
-|---------|-------------|
-| `pnpm build` | Genera la versión de producción en `dist/` |
-| `pnpm preview` | Sirve la versión de producción generada |
-| `pnpm lint` | Corre ESLint sobre el proyecto |
