@@ -1,15 +1,25 @@
 :root {
   --color-ink: #2a160a;
+  --color-ink-deep: #1a0d05;
   --color-counter: #7a4520;
   --color-counter-light: #a0602e;
   --color-counter-dark: #5c3216;
   --color-cream: #fff4dd;
-  --color-cream-muted: #e8cfa5;
+  --color-parchment: #e3cfa3;
+  --color-parchment-ink: #2b1d12;
+  --color-carved: #1e0c03;
+  --color-carved-edge: #b5763f;
+  --color-placeholder: #a58b70;
+  --color-focus: #ffd24a;
 
   --font-pixel: 'Pixelify Sans', ui-monospace, monospace;
 
+  --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 24px;
+
+  --border-pixel: 4px;
+  --shadow-pixel: 4px 4px 0 var(--color-ink);
 
   --content-width: 900px;
 
@@ -36,12 +46,20 @@ body {
   min-height: 100svh;
 }
 
-h1,
 p {
   margin: 0;
 }
 
-h1 {
-  font-weight: 700;
-  line-height: 1.1;
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
 }

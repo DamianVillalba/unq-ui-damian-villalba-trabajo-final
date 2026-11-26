@@ -1,0 +1,12 @@
+.input {
+  width: 100%;
+  min-width: 0;
+  padding: var(--space-sm) var(--space-md);
+  border: var(--border-pixel) solid var(--color-ink-deep);
+  background-color: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}

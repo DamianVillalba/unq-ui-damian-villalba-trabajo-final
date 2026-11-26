@@ -6,6 +6,8 @@
 
 .app__counter {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   border-top: 6px solid var(--color-counter-light);
   background:
     repeating-linear-gradient(
@@ -15,26 +17,4 @@
     ),
     var(--color-counter);
   padding: var(--space-lg) var(--space-md);
-}
-
-.app__content {
-  width: 100%;
-  max-width: var(--content-width);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.app__title {
-  font-size: clamp(1.75rem, 6vw, 2.5rem);
-  text-align: center;
-  color: var(--color-cream);
-  text-shadow: 0 3px 0 var(--color-ink);
-}
-
-.app__subtitle {
-  margin-top: calc(var(--space-md) * -0.5);
-  text-align: center;
-  color: var(--color-cream-muted);
 }

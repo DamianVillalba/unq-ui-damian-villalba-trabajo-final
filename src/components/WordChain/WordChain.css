@@ -1,0 +1,34 @@
+.word-chain {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--space-sm);
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--color-carved);
+  text-shadow: 0 2px 0 var(--color-carved-edge);
+}
+
+.word-chain__word {
+  overflow-wrap: anywhere;
+}
+
+.word-chain__word + .word-chain__word::before {
+  content: '›';
+  margin-right: var(--space-sm);
+  color: var(--color-counter-dark);
+  text-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .word-chain {
+    flex-direction: column;
+  }
+
+  .word-chain__word + .word-chain__word::before {
+    content: none;
+  }
+}

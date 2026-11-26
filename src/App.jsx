@@ -1,4 +1,5 @@
 import BarScene from './components/BarScene/BarScene.jsx'
+import GamePage from './pages/GamePage/GamePage.jsx'
 import './App.css'
 
 function App() {
@@ -6,10 +7,7 @@ function App() {
     <div className="app">
       <BarScene />
       <main className="app__counter">
-        <div className="app__content">
-          <h1 className="app__title">Palabras encadenadas</h1>
-          <p className="app__subtitle">Bar de Shakky, Grove 13, Sabaody</p>
-        </div>
+        <GamePage />
       </main>
     </div>
   )

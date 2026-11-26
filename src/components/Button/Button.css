@@ -1,0 +1,12 @@
+.button {
+  padding: var(--space-sm) var(--space-lg);
+  border: var(--border-pixel) solid var(--color-parchment-ink);
+  background-color: var(--color-parchment);
+  color: var(--color-parchment-ink);
+  box-shadow: var(--shadow-pixel);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
