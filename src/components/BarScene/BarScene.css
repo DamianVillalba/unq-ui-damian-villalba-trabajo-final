@@ -1,0 +1,14 @@
+.bar-scene {
+  flex: none;
+  height: clamp(180px, 40vw, 58svh);
+  overflow: hidden;
+}
+
+.bar-scene__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right bottom;
+  image-rendering: pixelated;
+}
